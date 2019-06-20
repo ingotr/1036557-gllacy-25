@@ -15,13 +15,45 @@
           <img src="img/logo.png" width="154" height="64" alt="Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a>
+            <ul class="catalog-list">
+              <li class="catalog-list-item">
+                <a class="" href="#">Новинки</a>
+              </li>
+              <li class="divider"></li>
+              <li class="catalog-list-item">
+                <a class="" href="#">Сливочное</a>
+              </li>
+              <li class="catalog-list-item">
+                <a class="" href="#">Щербеты</a>
+              </li>
+              <li class="catalog-list-item">
+                <a class="" href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-list-item">
+                <a class="" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="company.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#">Поиск</a></li>
-          <li><a href="#">Вход</a></li>
+          <li><a href="#">Поиск</a>
+            <input class="search-bar" type="text" name="search" value="" placeholder="Что ищем?">
+          </li>
+          <li><a href="#">Вход</a>
+            <form class="sign-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="sign-form-email" type="text" name="email" value=""
+              placeholder="Электронная почта">
+              <input class="sign-form-password" type="text" name="password" value=""
+              placeholder="Пароль">
+              <button class="button writeus-button" type="submit">
+                <span class="button-text">Войти</span></button>
+              <a class="sign-form-link" href="#">Забыли пароль?</a>
+              <a class="sign-form-link" href="#">Новая регистрация</a>
+            </form>
+          </li>
           <li><a href="basket.html">Пусто</a></li>
         </ul>
         <p>С 10 до 20, ежедневно</p>
@@ -231,6 +263,31 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="container">
+      <div class="modal-title-wrapper ">
+        <h2>Мы обязательно вам ответим!</h2>
+        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+          <img src="img/close-cross.svg" width="18" height="17" alt="">
+        </button>
+      </div>
+      <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="writeus-item">
+          <input id="writeus-name" class="writeus-item-input" type="text" name="name" value=""
+            placeholder="Как вас зовут?">
+        </p>
+        <p class="writeus-item">
+          <input id="writeus-email" class="writeus-item-input" type="text" name="email" value=""
+            placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="writeus-item">
+          <input id="writeus-emailtext" class="writeus-item-input" type="text" name="email-text" value=""
+            placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button writeus-button" type="submit"><span class="button-text">Отправить</span></button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
