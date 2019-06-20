@@ -29,10 +29,36 @@ a {
   margin: -1px;
 }
 
+/*  */
+/* Стили контейнеров */
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.container-spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+/*  */
+
+/*  */
 /* Раздел навигации */
 .main-navigation {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between; */
+
+  width: 1146px;
+  /* height: 154px; */
   margin: 0;
   padding: 0;
+  padding-top: 8px;
 }
 
 .site-navigation,
@@ -45,15 +71,47 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  align-items: center;
+
+  margin-right: 374px;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
 }
 
+.site-navigation .navigation-item {
+  padding-right: 28px;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
 .user-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+}
+
+.user-navigation .navigation-item {
+  padding-right: 9px;
+}
+
+.catalog-list {
+  display: none;
+}
+
+.search-bar {
+  display: none;
+}
+
+.sign-form {
+  display: none;
 }
 
 .navigation-item a{
@@ -74,10 +132,16 @@ a {
 }
 
 /* Раздел слайдера */
+.slider {
+  display: none;
+}
 
 /* Раздел баннеров */
 .banner-catalog {
+  display: flex;
+
   margin: 0;
+  margin-bottom: 37px;
   padding: 0;
 
   list-style: none;
@@ -87,6 +151,10 @@ a {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+}
+
+.banner-item:first-child {
+  margin-right: 70px;
 }
 
 .banner-text {
@@ -105,10 +173,17 @@ a {
 
 /* Раздел хитов */
 .hits-catalog {
+  display: flex;
+
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 
   list-style: none;
+}
+
+.hit-item {
+  padding-right: 26px;
 }
 
 .hit-price {
@@ -141,6 +216,10 @@ a {
 }
 
 /* Раздел SEO */
+.seo {
+  margin-bottom: 40px;
+}
+
 .seo-title {
   font-size: 24px;
   font-weight: 500;
@@ -149,6 +228,8 @@ a {
 }
 
 .seo-features-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
 
@@ -163,6 +244,9 @@ color: #323232;
 }
 
 /* Раздел блога */
+.blog-list {
+  display: flex;
+}
 
 .blog-title {
   font-size: 16px;
@@ -291,6 +375,17 @@ color: #323232;
 }
 
 /* Раздел контактов */
+.contacts {
+  margin-bottom: 20px;
+}
+
+.business-card {
+  width: 302px;
+  min-height: 305px;
+
+  background-color: #ffffff;
+}
+
 .card-adresstext {
   font-size: 14px;
   font-weight: 400;
@@ -335,6 +430,8 @@ color: #fefefe;
 
 /* Раздел социальных сетей */
 .social-button-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
 
@@ -343,6 +440,9 @@ color: #fefefe;
 
 /* Раздел меню */
 .menu {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
@@ -369,6 +469,9 @@ color: #fefefe;
 /* Раздел мейдин */
 .made-in-text,
 .made-in-htmlacademy {
+  margin: 0;
+  padding: 0;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -381,6 +484,10 @@ color: #fefefe;
 }
 
 /* Раздел модального окна */
+.modal {
+  display: none;
+}
+
 .modal-title {
   font-size: 24px;
   font-weight: 500;
