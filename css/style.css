@@ -1,0 +1,405 @@
+/*  */
+/* Основные правила */
+
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  */
+/* Visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Раздел навигации */
+.main-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation,
+.catalog-list,
+.user-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.user-navigation {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.navigation-item a{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.schedule {
+  font-weight: 700;
+}
+
+.header-tel {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Раздел слайдера */
+
+/* Раздел баннеров */
+.banner-catalog {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.banner-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.banner-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.banner-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Раздел хитов */
+.hits-catalog {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.hit-price {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.hit-kg-icon,
+.hit-ruble-icon {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.hit-ruble-icon {
+  font-size: 45px;
+}
+
+.hit-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ffffff;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Раздел SEO */
+.seo-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #323232;
+}
+
+.seo-features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feature-description {
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+color: #323232;
+}
+
+/* Раздел блога */
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #323232;
+}
+
+.blog-news-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #323232;
+
+  text-decoration: underline;
+}
+
+/* Раздел рассылки */
+.mailing-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.mailing-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fefefe;
+}
+
+/* Раздел хлебных крошек */
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/* Раздел фильтров */
+.filters-sorting,
+.filters-pricing,
+.fat-title,
+.filler-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filters-sorting-select {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  width: 194px;
+  height: 37px;
+  background-color: #f8f7f4;
+  opacity: 0.2;
+}
+
+/* .sorting-option {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+} */
+
+.filters-fat-list,
+.filler-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.radio-container,
+.checkbox-container {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.filters-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+/* Раздел каталога */
+.goods-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Раздел пагинации */
+.pagination-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-item-current {
+  color: #323232;
+}
+
+/* Раздел контактов */
+.card-adresstext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+}
+
+.card-adress {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
+}
+
+.card-teltext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+}
+
+.card-tel {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #323232;
+}
+
+.card-schedule {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #323232;
+}
+
+.modal-writeus {
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+color: #fefefe;
+}
+
+/* Раздел социальных сетей */
+.social-button-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Раздел меню */
+.menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none
+}
+
+.menu-item:first-child {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.menu-item {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Раздел мейдин */
+.made-in-text,
+.made-in-htmlacademy {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fefefe;
+}
+
+.made-in-htmlacademy {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Раздел модального окна */
+.modal-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #323232;
+}
+
+.writeus-item-name,
+.writeus-item-email,
+.writeus-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+}
+
+.writeus-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fefefe;
+}

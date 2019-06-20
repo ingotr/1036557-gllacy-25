@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси - Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -11,18 +14,18 @@
     <h2 class="visually-hidden">Секция хедера</h2>
     <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.png" width="154" height="64" alt="Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
+          <li class="navigation-item"><a href="#">Каталог</a>
             <ul class="catalog-list">
               <li class="catalog-list-item">
                 <a class="" href="#">Новинки</a>
               </li>
               <li class="divider"></li>
               <li class="catalog-list-item">
-                <a class="" href="#">Сливочное</a>
+                <a class="" href="catalog.html">Сливочное</a>
               </li>
               <li class="catalog-list-item">
                 <a class="" href="#">Щербеты</a>
@@ -35,14 +38,14 @@
               </li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="company.html">О Компании</a></li>
+          <li class="navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
+          <li class="navigation-item"><a href="company.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#">Поиск</a>
+          <li class="navigation-item"><a href="#">Поиск</a>
             <input class="search-bar" type="text" name="search" value="" placeholder="Что ищем?">
-          </li>
-          <li><a href="#">Вход</a>
+          </li class="navigation-item">
+          <li class="navigation-item"><a href="#">Вход</a>
             <form class="sign-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="sign-form-email" type="text" name="email" value="" placeholder="Электронная почта">
               <input class="sign-form-password" type="text" name="password" value="" placeholder="Пароль">
@@ -52,7 +55,7 @@
               <a class="sign-form-link" href="#">Новая регистрация</a>
             </form>
           </li>
-          <li><a class="full" href="basket.html">2 товара</a>
+          <li class="navigation-item"><a class="full" href="basket.html">2 товара</a>
             <div class="basket-full">
               <ul class="basket-list">
                 <li class="basket-list-item">
@@ -86,10 +89,10 @@
   <main>
     <section class="breadcrumbs">
       <h2 class="visually-hidden">Секция указателя</h2>
-      <ul class="">
-        <li>Главная</li>
-        <li>Каталог</li>
-        <li>Сливочное</li>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">Главная</li>
+        <li class="breadcrumbs-item">Каталог</li>
+        <li class="breadcrumbs-item">Сливочное</li>
       </ul>
     </section>
     <h2 class="site-title">Сливочное мороженое</h2>
@@ -99,16 +102,15 @@
         <form class="filters-form">
           <label for="filters-sorting">Сортировка</label>
           <select id="filters-sorting" class="filters-sorting-select" name="sorting">
-            <option>по популярности</option>
-            <option>сначала недорогие</option>
-            <option>сначала дорогие</option>
-            <option>по жирности</option>
+            <option class="sorting-option">по популярности</option>
+            <option class="sorting-option">сначала недорогие</option>
+            <option class="sorting-option">сначала дорогие</option>
+            <option class="sorting-option">по жирности</option>
           </select>
           <label for="filters-pricing">Цена: 100 руб. - 500 руб.</label>
-          <input id="filters-pricing" class="filters-pricing-input"
-          type="text" name="pricing" placeholder="100 - 500">
+          <input id="filters-pricing" class="filters-pricing-input" type="text" name="pricing" placeholder="100 - 500">
           <fieldset class="filters-fat">
-            <legend>Жирность:</legend>
+            <legend class="fat-title">Жирность:</legend>
             <ul class="filters-fat-list">
               <li class="filters-fat-item">
                 <label class="radio-container" aria-label="Выбрать жирность
@@ -145,7 +147,7 @@
             </ul>
           </fieldset>
           <fieldset class="filters-filler">
-            <legend>Наполнители:</legend>
+            <legend class="filler-title">Наполнители:</legend>
             <ul class="filler-list">
               <li class="filler-list-item" tabindex="0">
                 <label class="checkbox-container" aria-label="Выбрать наполнители:
@@ -263,23 +265,23 @@
     </section>
     <div class="pagination">
       <ul class="pagination-list">
-        <li class="pagination-item-current">
-          <a href="#" aria-label="Текущая страница">1</a>
+        <li>
+          <a class="pagination-item pagination-item-current" href="#" aria-label="Текущая страница">1</a>
         </li>
-        <li class="pagination-item">
-          <a href="#" aria-label="Перейти на вторую страницу">2</a>
+        <li>
+          <a class="pagination-item" href="#" aria-label="Перейти на вторую страницу">2</a>
         </li>
-        <li class="pagination-item">
-          <a href="#" aria-label="Перейти на третью страницу">3</a>
+        <li>
+          <a class="pagination-item" href="#" aria-label="Перейти на третью страницу">3</a>
         </li>
-        <li class="pagination-item">
-          <a href="#" aria-label="Перейти на четвертую страницу">4</a>
+        <li>
+          <a class="pagination-item" href="#" aria-label="Перейти на четвертую страницу">4</a>
         </li>
-        <li class="pagination-item">
-          <a href="#" aria-label="Перейти на пятую страницу">5</a>
+        <li>
+          <a class="pagination-item" href="#" aria-label="Перейти на пятую страницу">5</a>
         </li>
-        <li class="pagination-item">
-          <a href="#" aria-label="Перейти на следующую страницу">Следующая</a>
+        <li>
+          <a class="pagination-item" href="#" aria-label="Перейти на следующую страницу">Следующая</a>
         </li>
       </ul>
     </div>
