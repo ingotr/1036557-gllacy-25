@@ -57,11 +57,11 @@
           </li>
           <li class="navigation-item"><a href="basket.html">Пусто</a></li>
         </ul>
-        <div class="schedule-wrapper">
-          <p class="schedule">С 10 до 20, ежедневно</p>
-          <p class="header-tel">8 812 450-25-25</p>
-        </div>
       </nav>
+      <div class="schedule-card">
+        <p class="schedule">С 10 до 20, ежедневно</p>
+        <p class="header-tel">8 812 450-25-25</p>
+      </div>
     </div>
   </header>
   <section class="slider">
@@ -124,30 +124,42 @@
       <div class="container">
         <ul class="hits-catalog">
           <li class="hit-item">
-            <img src="img/icecream-1.jpg" width="267" height="267" alt="">
-            <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
-            <p class="hit-price">310<span class="hit-ruble-icon">₽</span><span class="hit-kg-icon">/кг</span></p>
-            <p class="hit-description">Сливочное с апельсиновым джемом и
+            <img class="icecream-image" src="img/icecream-1.jpg" width="267" height="267" alt="">
+            <div class="price-tag">
+              <p class="hit-price">310<span class="hit-ruble-icon">₽</span>
+                <span class="hit-kg-icon">/кг</span></p>
+              <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
+            </div>
+            <p class="hit-text">Сливочное с апельсиновым джемом и
               цитрусовой стружкой</p>
           </li>
           <li class="hit-item">
-            <img src="img/icecream-2.jpg" width="267" height="267" alt="">
-            <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
-            <p class="hit-price">380<span class="hit-ruble-icon">₽</span><span class="hit-kg-icon">/кг</span></p>
-            <p class="hit-description">Сливочно-кофейное с кусочками шоколада </p>
+            <img class="icecream-image" src="img/icecream-2.jpg" width="267" height="267" alt="">
+            <div class="price-tag">
+              <p class="hit-price">380<span class="hit-ruble-icon">₽</span>
+                <span class="hit-kg-icon">/кг</span></p>
+              <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
+            </div>
+            <p class="hit-text">Сливочно-кофейное с кусочками шоколада </p>
           </li>
           <li class="hit-item">
-            <img src="img/icecream-3.jpg" width="267" height="267" alt="">
-            <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
-            <p class="hit-price">355<span class="hit-ruble-icon">₽</span><span class="hit-kg-icon">/кг</span></p>
-            <p class="hit-description">Сливочно-клубничное с присыпкой из
+            <img class="icecream-image" src="img/icecream-3.jpg" width="267" height="267" alt="">
+            <div class="price-tag">
+              <p class="hit-price">355<span class="hit-ruble-icon">₽</span>
+                <span class="hit-kg-icon">/кг</span></p>
+              <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
+            </div>
+            <p class="hit-text">Сливочно-клубничное с присыпкой из
               белого шоколада</p>
           </li>
           <li class="hit-item">
-            <img src="img/icecream-4.jpg" width="267" height="267" alt="">
-            <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
-            <p class="hit-price">415<span class="hit-ruble-icon">₽</span><span class="hit-kg-icon">/кг</span></p>
-            <p class="hit-description">Сливочное крем-брюле с карамельной
+            <img class="icecream-image" src="img/icecream-4.jpg" width="267" height="267" alt="">
+            <div class="price-tag">
+              <p class="hit-price">415<span class="hit-ruble-icon">₽</span>
+                <span class="hit-kg-icon">/кг</span></p>
+              <img class="hit-icon" src="img/hit-icon.svg" width="61" height="61" alt="">
+            </div>
+            <p class="hit-text">Сливочное крем-брюле с карамельной
               подливкой</p>
           </li>
         </ul>
@@ -215,8 +227,7 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Секция контактов</h2>
-      <div class="map">
-      </div>
+      <div class="map"></div>
       <div class="container">
         <div class="business-card">
           <p class="card-adresstext">Адрес главного офиса
@@ -266,8 +277,9 @@
       </ul>
       <div class="made-in">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">
-        <p class="made-in-text">Сделано в </p>
-        <p class="made-in-htmlacademy">HTML Academy © 2019</p>
+        <p class="made-in-text">Сделано в
+          <span class="made-in-htmlacademy">HTML Academy © 2019</span>
+        </p>
       </div>
     </div>
   </footer>

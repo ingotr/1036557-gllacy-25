@@ -74,7 +74,8 @@ a {
   display: flex;
   align-items: center;
 
-  margin-right: 374px;
+  margin-right: 425px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   font-weight: 700;
@@ -93,6 +94,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
 
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -100,6 +103,10 @@ a {
 
 .user-navigation .navigation-item {
   padding-right: 9px;
+}
+
+.main-header-logo {
+  margin-right: 10px;
 }
 
 .catalog-list {
@@ -114,6 +121,10 @@ a {
   display: none;
 }
 
+.basket-full{
+  display: none;
+}
+
 .navigation-item a{
   font-size: 16px;
   font-weight: 700;
@@ -121,11 +132,23 @@ a {
   color: #ffffff;
 }
 
+.schedule-card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .schedule {
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
 }
 
 .header-tel {
+  margin: 0;
+  padding: 0;
+
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
@@ -183,10 +206,20 @@ a {
 }
 
 .hit-item {
-  padding-right: 26px;
+  margin-right: 26px;
+}
+
+.price-tag {
+  position: relative;
 }
 
 .hit-price {
+  position: absolute;
+  top: -65px;
+
+  margin: 0;
+  padding: 0;
+
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
@@ -205,14 +238,27 @@ a {
   font-size: 45px;
 }
 
-.hit-description {
+.hit-text {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
 
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.icecream-image {
+  border-radius: 50%;
+}
+
+.hit-icon {
+  position: absolute;
+  top: -268px;
 }
 
 /* Раздел SEO */
@@ -281,6 +327,10 @@ color: #323232;
 
 /* Раздел хлебных крошек */
 .breadcrumbs-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 220px;
   margin: 0;
   padding: 0;
 
@@ -292,9 +342,33 @@ color: #323232;
   font-weight: 400;
   line-height: 16px;
   color: #ffffff;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs-item::after {
+  content: "»";
+  padding: 0 5px;
+
+  line-height: 16px;
+
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child {
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
 }
 
 /* Раздел фильтров */
+.filters {
+  margin-bottom: 40px;
+}
+
 .filters-sorting,
 .filters-pricing,
 .fat-title,
@@ -349,25 +423,58 @@ color: #323232;
 
 /* Раздел каталога */
 .goods-list {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.good-item {
+  width: 267px;
+
+  margin: 0;
+  margin-right: 26px;
+  margin-bottom: 41px;
+  padding: 0;
+}
+
+.good-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* Раздел пагинации */
 .pagination-list {
+  display: flex;
+  justify-content: end;
+
   margin: 0;
+  margin-bottom: 18px;
   padding: 0;
+  padding-bottom: 33px;
 
   list-style: none;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item {
+  margin-right: 15px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
+}
+
+.pagination-cover {
+  margin-right: 10px;
+}
+
+.pagination-cover:last-child {
+  margin-right: 0;
 }
 
 .pagination-item-current {
@@ -376,10 +483,29 @@ color: #323232;
 
 /* Раздел контактов */
 .contacts {
+  height: 430px;
   margin-bottom: 20px;
 }
 
+.map {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 416px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
 .business-card {
+  position: relative;
+  z-index: 1;
+
   width: 302px;
   min-height: 305px;
 
@@ -428,9 +554,16 @@ line-height: 24px;
 color: #fefefe;
 }
 
+/*  */
+/* Раздел футера */
+.main-footer {
+  margin-bottom: 25px;
+}
+
 /* Раздел социальных сетей */
 .social-button-list {
   display: flex;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -438,11 +571,17 @@ color: #fefefe;
   list-style: none;
 }
 
+.social-button-container {
+  margin-right: 11px;
+}
+
 /* Раздел меню */
 .menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
+  width: 350px;
   margin: 0;
   padding: 0;
 
@@ -457,6 +596,11 @@ color: #fefefe;
 }
 
 .menu-item {
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 9px;
+  padding: 0;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
