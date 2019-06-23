@@ -49,6 +49,10 @@ a {
 
 /*  */
 /* Раздел навигации */
+.main-header {
+  margin-bottom: 140px;
+}
+
 .main-navigation {
   display: flex;
   /* flex-direction: row;
@@ -59,6 +63,10 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 8px;
+}
+
+.main-header-logo {
+  margin-right: 10px;
 }
 
 .site-navigation,
@@ -74,7 +82,7 @@ a {
   display: flex;
   align-items: center;
 
-  margin-right: 425px;
+  margin-right: 340px;
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -82,11 +90,128 @@ a {
   line-height: 18px;
 }
 
-.site-navigation .navigation-item {
-  padding-right: 28px;
+.navigation-item {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.catalog:hover {
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+  border-radius: 25px;
+}
+
+.catalog:hover > a {
+  color: #000000;
+}
+
+.catalog:hover .catalog-list {
+  display: block;
+}
+
+.catalog:focus,
+.catalog:active  {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+  background-color: #f8f7f4;
+}
+
+.catalog {
+  position: relative;
+}
+
+.catalog-list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 143px;
+  margin-top: 5px;
+  /* height: 171px; */
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.catalog-list .catalog-list-item {
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+}
+
+.catalog-list-item a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+.catalog-list-item:first-child {
+  border-bottom: 1px solid rgba(248, 247, 244, 0.8);
+}
+
+.catalog-list-item:first-child a {
+  font-weight: 700;
+}
+
+.catalog-list-item:hover {
+  background-color: #fbded7;
+  border-radius: 5px;
+}
+
+.catalog-list-item:focus {
+  background-color: #f6b5a5;
+  border-radius: 5px;
+}
+
+.catalog-list .catalog-list-item-current {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background-color: #d07058;
+}
+
+.catalog-list-item-current a {
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+
+.navigation-item {
+  padding-left: 18px;
+  padding-right: 18px;
 
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-item-current {
+  text-decoration: none;
+
+  background-color: #d07058;
+  border-radius: 25px;
 }
 
 .user-navigation {
@@ -101,31 +226,242 @@ a {
   line-height: 16px;
 }
 
-.user-navigation .navigation-item {
-  padding-right: 9px;
+/*  */
+/* Кнопка поиска */
+.search {
+  position: relative;
+
+  width: 33px;
+  height: 33px;
+  margin: 0;
+  padding: 0;
+
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.2);
 }
 
-.main-header-logo {
-  margin-right: 10px;
+.search-icon,
+.search-icon-hover {
+  padding-top: 8px;
+  padding-left: 8px;
 }
 
-.catalog-list {
+.search-icon-hover {
   display: none;
+}
+
+.search:hover {
+  background-color: #f8f7f4;
+}
+
+.search:hover .search-icon {
+  display: none;
+}
+
+.search:hover .search-icon-hover {
+  display: block;
+}
+
+.search:hover .search-bar {
+  display: block;
 }
 
 .search-bar {
   display: none;
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  width: 341px;
+  height: 84px;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.search-bar-input {
+  width: 301px;
+  height: 44px;
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding: 0;
+  padding-left: 15px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(157, 177, 165, 0.2);
+
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+/*  */
+
+/*  */
+/* Форма входа */
+.sign-in {
+  position: relative;
+  margin-left: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.sign-in > a {
+  margin: 0;
+  padding: 0;
+  padding-left: 21px;
+}
+
+.sign-in a::before {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+
+  content: url("../img/entry-icon.svg");
+}
+
+.sign-in:hover {
+  background-color: #f8f7f4;
+}
+
+.sign-in:hover > a {
+  color: #000000;
+}
+
+.sign-in:hover a::before {
+  content: url("../img/entry-icon-hover.svg");
+}
+
+.sign-in:hover .sign-form {
+  display: block;
 }
 
 .sign-form {
   display: none;
+  position: absolute;
+
+  width: 277px;
+  height: 214px;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
-.basket-full{
+.sign-form-email {
+  width: 241px;
+  height: 44px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.sign-form-password {
+  width: 241px;
+  height: 44px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  height: 40px;
+
+  vertical-align: middle;
+  text-align: center;
+  line-height: 38px;
+  /* box-shadow: 0 1px 2px #ac1000; */
+  background-color: #e84d37;
+  /* background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%); */
+  border-radius: 20px;
+}
+
+.writeus-button {
+  height: 38px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 0;
+
+  line-height: 38px;
+}
+
+.button-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #fefefe;
+}
+
+.sign-form-link {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #323232;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+
+/*  */
+/* Форма корзины */
+.basket {
+  position: relative;
+  margin-left: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+
+.basket > a {
+  margin: 0;
+  padding: 0;
+  padding-left: 21px;
+}
+
+.basket a::before {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+
+  content: url("../img/basket-icon.svg");
+}
+
+.basket-full {
   display: none;
 }
 
-.navigation-item a{
+.basket:hover > a {
+  color: #000000;
+}
+
+/*  */
+
+.navigation-item > a {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
@@ -171,16 +507,43 @@ a {
 }
 
 .banner-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
 }
 
+.banner-item {
+  padding-left: 30px;
+
+  border-radius: 10px;
+}
+
 .banner-item:first-child {
-  margin-right: 70px;
+  margin-right: 30px;
+
+  background-color: #d02452;
+  background-image: url("../img/raspberry-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-item:last-child {
+  background-color: #6e4229;
+  background-image: url("../img/chocolate-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner-text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -443,6 +806,8 @@ a {
 }
 
 .filters-sorting-select {
+  padding-left: 10px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -450,9 +815,27 @@ a {
 
   width: 194px;
   height: 37px;
-  background-color: #f8f7f4;
-  opacity: 0.2;
+
+  background-color: rgba(157, 177, 165, 0.8);
+  border: none;
+  border-radius: 25px;
 }
+
+.filters-sorting-select:hover {
+  color: #000000;
+}
+
+/* .filters-sorting-select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+} */
 
 /* .sorting-option {
   font-size: 16px;
@@ -587,8 +970,6 @@ a {
   justify-content: flex-end;
 }
 
-
-
 .card-adresstext {
   width: 158px;
 
@@ -704,8 +1085,15 @@ a {
 }
 
 .menu-item:first-child::before {
+  position: absolute;
   content: "";
-  backgrou-image: url("../img/heart-icon.svg");
+  top: 5px;
+  left: 10px;
+
+
+  background-image: url("../img/heart-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 13px;
 }
 
 .menu-item {

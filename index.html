@@ -18,7 +18,7 @@
           <img src="img/logo.png" width="154" height="64" alt="Глейси">
         </a>
         <ul class="site-navigation">
-          <li class="navigation-item"><a href="#">Каталог</a>
+          <li class="navigation-item catalog" onclick="myFunction()"><a href="#">Каталог</a>
             <ul class="catalog-list">
               <li class="catalog-list-item">
                 <a class="" href="#">Новинки</a>
@@ -42,20 +42,25 @@
           <li class="navigation-item"><a href="company.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="navigation-item"><a href="#">Поиск</a>
-            <input class="search-bar" type="text" name="search" value="" placeholder="Что ищем?">
-          </li class="navigation-item">
-          <li class="navigation-item"><a href="#">Вход</a>
+          <li class="navigation-item search"><a class="visually-hidden" href="#">Поиск</a>
+            <img class="search-icon" src="img/search-icon.svg" width="17" height="17" alt="">
+            <img class="search-icon-hover" src="img/search-icon-hover.svg" width="17" height="17" alt="">
+            <div class="search-bar">
+              <input class="search-bar-input" type="text" name="search" value="" placeholder="Что ищем?">
+            </div>
+          </li>
+          <li class="navigation-item sign-in"><a href="#">Вход</a>
             <form class="sign-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="sign-form-email" type="text" name="email" value="" placeholder="Электронная почта">
               <input class="sign-form-password" type="text" name="password" value="" placeholder="Пароль">
-              <button class="button writeus-button" type="submit">
-                <span class="button-text">Войти</span></button>
+              <a class="button writeus-button" href="#">
+                <span class="button-text">Войти</span></a>
               <a class="sign-form-link" href="#">Забыли пароль?</a>
               <a class="sign-form-link" href="#">Новая регистрация</a>
             </form>
           </li>
-          <li class="navigation-item"><a href="basket.html">Пусто</a></li>
+          <li class="navigation-item basket"><a href="basket.html">Пусто</a>
+          </li>
         </ul>
       </nav>
       <div class="schedule-card">
@@ -310,6 +315,7 @@
       </form>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
