@@ -1010,10 +1010,31 @@ a {
 }
 
 .filters-button {
+  width: 144px;
+  height: 36px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
+
+  border: 2px solid #ffffff;
+  background-color: #9cb0a4;
+  border-radius: 25px;
+}
+
+.filters-button:hover {
+  color: #323232;
+
+  border: none;
+  background-color: #fbfcfc;
+}
+
+.filters-button:active {
+  color: #323232;
+
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
 }
 
 /* Раздел каталога */
@@ -1265,6 +1286,21 @@ a {
 
 .social-button-container {
   margin-right: 11px;
+  padding: 4px 6px;
+
+  opacity: 0.8;
+  background-color:rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.social-button-container:hover {
+  opacity: 1;
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+.social-button-container:active {
+  opacity: 0.6;
+  background-color: #ffffff;
 }
 
 /* Раздел меню */
