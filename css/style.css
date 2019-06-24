@@ -82,7 +82,7 @@ a {
   display: flex;
   align-items: center;
 
-  margin-right: 340px;
+  margin-right: 320px;
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -320,9 +320,14 @@ a {
   margin: 0;
   padding: 0;
   padding-left: 21px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
 }
 
-.sign-in a::before {
+.sign-in .sign-in-text::before {
   position: absolute;
   top: 8px;
   left: 12px;
@@ -335,10 +340,13 @@ a {
 }
 
 .sign-in:hover > a {
-  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #323232;
 }
 
-.sign-in:hover a::before {
+.sign-in:hover .sign-in-text::before {
   content: url("../img/entry-icon-hover.svg");
 }
 
@@ -391,7 +399,26 @@ a {
   /* box-shadow: 0 1px 2px #ac1000; */
   background-color: #e84d37;
   /* background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%); */
+
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   border-radius: 20px;
+}
+
+/* Общие стили для кнопок */
+.button:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 
 .writeus-button {
@@ -437,10 +464,19 @@ a {
   background-color:rgba(255, 255, 255, 0.2);
 }
 
+.full-basket {
+  background-color: #f7f6f3;
+}
+
 .basket > a {
   margin: 0;
   padding: 0;
   padding-left: 21px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 .basket a::before {
@@ -449,6 +485,25 @@ a {
   left: 12px;
 
   content: url("../img/basket-icon.svg");
+}
+
+.basket .full {
+  margin: 0;
+  padding: 0;
+  padding-left: 21px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket .full::before {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+
+  content: url("../img/basket-full-icon.svg");
 }
 
 .basket-full {
@@ -550,11 +605,33 @@ a {
 }
 
 .banner-button {
+  width: 165px;
+  height: 46px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
   color: #ffffff;
+
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  opacity: 0.99;
+}
+
+.banner-button:hover {
+  box-shadow: 0 1px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.banner-button:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 
 /* Раздел хитов */
@@ -623,6 +700,78 @@ a {
   position: absolute;
   top: -268px;
 }
+
+/* Общие стили для ссылок */
+.link-default {
+  /* font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; */
+  color: #ffffff;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.link-default:hover,
+.link-default:active {
+  /* font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; */
+  color: #ffbc9e;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 188, 158, 0.2);
+}
+
+.link-form-default {
+  /* font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; */
+  color: #323232;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 0.2);
+}
+
+.link-form-default:hover,
+.link-form-default:active {
+  /* font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; */
+  color: #e84d37;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(232, 77, 55, 0.2);
+}
+
+/* Общие стили для полей ввода */
+.input-default {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+}
+
+.input-default:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.input-default:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.input-default:valid {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #323232;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
 
 /* Раздел SEO */
 .seo {

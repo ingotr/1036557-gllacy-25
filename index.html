@@ -46,13 +46,13 @@
             <img class="search-icon" src="img/search-icon.svg" width="17" height="17" alt="">
             <img class="search-icon-hover" src="img/search-icon-hover.svg" width="17" height="17" alt="">
             <div class="search-bar">
-              <input class="search-bar-input" type="text" name="search" value="" placeholder="Что ищем?">
+              <input class="search-bar-input input-default" type="text" name="search" value="" placeholder="Что ищем?">
             </div>
           </li>
-          <li class="navigation-item sign-in"><a href="#">Вход</a>
+          <li class="navigation-item sign-in"><a class="sign-in-text" href="#">Вход</a>
             <form class="sign-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="sign-form-email" type="text" name="email" value="" placeholder="Электронная почта">
-              <input class="sign-form-password" type="text" name="password" value="" placeholder="Пароль">
+              <input class="sign-form-email input-default" type="email" name="email" value="" placeholder="Электронная почта">
+              <input class="sign-form-password input-default" type="password" name="password" value="" placeholder="Пароль">
               <a class="button writeus-button" href="#">
                 <span class="button-text">Войти</span></a>
               <a class="sign-form-link" href="#">Забыли пароль?</a>
@@ -224,7 +224,7 @@
             </p>
             <form class="mailing-signup">
               <label for="mailing-email"></label>
-              <input id="mailing-email" class="mailing-signup-input" type="text" name="email"
+              <input id="mailing-email input-default" class="mailing-signup-input" type="email" name="email"
                 placeholder="Электронная почта">
               <button class="button mailing-button">Отправить</button>
             </form>
@@ -277,10 +277,10 @@
         </li>
       </ul>
       <ul class="menu">
-        <li class="menu-item">Для поставщиков</li>
-        <li class="menu-item">О производстве</li>
-        <li class="menu-item">Наши документы</li>
-        <li class="menu-item">Экологические стандарты</li>
+        <li class="menu-item"><a class="link-default" href="#">Для поставщиков</a></li>
+        <li class="menu-item"><a class="link-default" href="#">О производстве</a></li>
+        <li class="menu-item"><a class="link-default" href="#">Наши документы</a></li>
+        <li class="menu-item"><a class="link-default" href="#">Экологические стандарты</a></li>
       </ul>
       <div class="made-in">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="">
@@ -300,15 +300,15 @@
       </div>
       <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="writeus-item">
-          <input id="writeus-name" class="writeus-item-name" type="text" name="name" value=""
+          <input id="writeus-name" class="writeus-item-name input-default" type="text" name="name" value=""
             placeholder="Как вас зовут?">
         </p>
         <p class="writeus-item">
-          <input id="writeus-email" class="writeus-item-email" type="text" name="email" value=""
+          <input id="writeus-email" class="writeus-item-email input-default" type="email" name="email" value=""
             placeholder="Ваша почта для ответа?">
         </p>
         <p class="writeus-item">
-          <input id="writeus-emailtext" class="writeus-item-text" type="text" name="email-text" value=""
+          <input id="writeus-emailtext" class="writeus-item-text input-default" type="text" name="email-text" value=""
             placeholder="Напишите что-нибудь...">
         </p>
         <button class="button writeus-button" type="submit"><span class="button-text">Отправить</span></button>
