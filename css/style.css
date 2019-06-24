@@ -1212,7 +1212,7 @@ a {
   position: relative;
   z-index: 1;
 
-  width: 302px;
+  width: 268px;
   min-height: 260px;
   margin-top: 60px;
   padding: 28px 17px;
@@ -1284,8 +1284,12 @@ a {
 }
 
 .modal-writeus {
+  width: 252px;
+  height: 28px;
   margin: 0;
   padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   text-align: center;
   font-size: 18px;
