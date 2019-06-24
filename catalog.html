@@ -51,13 +51,18 @@
           </li>
           <li class="navigation-item sign-in"><a class="sign-in-text" href="#">Вход</a>
             <form class="sign-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="sign-form-email input-default" type="text" name="email" value=""
+              <input class="sign-form-email input-default" type="email" name="email" value=""
                 placeholder="Электронная почта">
-              <input class="sign-form-password input-default" type="text" name="password" value="" placeholder="Пароль">
-              <a class="button writeus-button" href="#">
-                <span class="button-text">Войти</span></a>
-              <a class="sign-form-link" href="#">Забыли пароль?</a>
-              <a class="sign-form-link" href="#">Новая регистрация</a>
+              <input class="sign-form-password input-default" type="password" name="password" value=""
+                placeholder="Пароль">
+              <div class="sign-form-container">
+                <a class="button writeus-button" href="#">
+                  <span class="button-text">Войти</span></a>
+                <div class="sign-link-wrapper">
+                  <a class="sign-form-link" href="#">Забыли пароль?</a>
+                  <a class="sign-form-link" href="#">Новая регистрация</a>
+                </div>
+              </div>
             </form>
           </li>
           <li class="navigation-item basket full-basket"><a class="full" href="basket.html">2 товара</a>
@@ -98,11 +103,11 @@
       <div class="container">
         <h2 class="visually-hidden">Секция указателя</h2>
         <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item">Главная</li>
-          <li class="breadcrumbs-item">Каталог</li>
-          <li class="breadcrumbs-item">Сливочное</li>
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+          <li class="breadcrumbs-item"><a href="#">Сливочное</a></li>
+        </ul>
       </div>
-      </ul>
     </section>
     <section class="site-title">
       <div class="container">
@@ -340,7 +345,8 @@
       <div class="container">
         <ul class="pagination-list">
           <li class="pagination-cover">
-            <a class="pagination-item pagination-item-disabled" href="#" aria-label="Текущая страница"><</a>
+            <a class="pagination-item pagination-item-disabled" href="#"
+            aria-label="Перейти на предыдущую страницу">&lt;</a>
           </li>
           <li class="pagination-cover">
             <a class="pagination-item pagination-item-current" href="#" aria-label="Текущая страница">1</a>

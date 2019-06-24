@@ -340,9 +340,6 @@ a {
 }
 
 .sign-in:hover > a {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
   color: #323232;
 }
 
@@ -351,12 +348,15 @@ a {
 }
 
 .sign-in:hover .sign-form {
-  display: block;
+  display: flex;
 }
 
 .sign-form {
   display: none;
+  flex-direction: column;
   position: absolute;
+  top: 40px;
+  left: -187px;
 
   width: 277px;
   height: 214px;
@@ -388,6 +388,12 @@ a {
   border-radius: 5px;
 }
 
+.sign-form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .button {
   display: block;
   width: 100px;
@@ -406,6 +412,12 @@ a {
   border-radius: 20px;
 }
 
+.sign-link-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 12px;
+}
 /* Общие стили для кнопок */
 .button:hover {
   box-shadow: 0 2px 2px #ac1000;
@@ -422,9 +434,11 @@ a {
 }
 
 .writeus-button {
+  align-self: flex-start;
   height: 38px;
   margin: 0;
   margin-top: 15px;
+  margin-right: 20px;
   margin-left: 20px;
   padding: 0;
 
