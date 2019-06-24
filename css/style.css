@@ -1028,6 +1028,7 @@ a {
 }
 
 .good-item {
+  position: relative;
   width: 267px;
 
   margin: 0;
@@ -1038,6 +1039,43 @@ a {
 
 .good-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.good-item:hover .item-card,
+.good-item:hover .quick-view-button {
+  display: block;
+}
+
+.item-card {
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: -14px;
+
+  width: 293px;
+  height: 405px;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+
+  z-index: 1;
+}
+
+.quick-view-button {
+  display: none;
+  position: absolute;
+  top: 335px;
+  left: 50px;
+
+  width: 200px;
+  height: 44px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #fefefe;
+  text-align: center;
 }
 
 /* Раздел пагинации */
