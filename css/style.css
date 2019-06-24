@@ -1094,7 +1094,9 @@ a {
 }
 
 .pagination-item {
-  margin-right: 15px;
+  display: block;
+
+  padding: 9px 13px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1103,7 +1105,7 @@ a {
 }
 
 .pagination-cover {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .pagination-item,
@@ -1111,8 +1113,25 @@ a {
   margin-right: 0;
 }
 
+.pagination-item:hover:not(.pagination-item-current) {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
 .pagination-item-current {
+  display: block;
+  vertical-align: middle;
+
+  background-color: #ffffff;
   color: #323232;
+  border-radius: 50%;
+}
+
+.pagination-item-disabled {
+  /* cursor: not-allowed; */
+  pointer-events: none;
+
+  opacity: 0.2;
 }
 
 /* Раздел контактов */
