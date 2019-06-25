@@ -1458,7 +1458,18 @@ a {
 
 /* Раздел модального окна */
 .modal {
-  display: none;
+  display: block;
+  width: 478px;
+  height: 443px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.modal-title-wrapper {
+  display: flex;
+  flex-direction: row;
+
 }
 
 .modal-title {
@@ -1466,6 +1477,11 @@ a {
   font-weight: 500;
   line-height: 28px;
   color: #323232;
+}
+
+.modal-close {
+  background-color: transparent;
+  border: none;
 }
 
 .writeus-item-name,
@@ -1477,9 +1493,35 @@ a {
   color: #999999;
 }
 
+.writeus-item-name,
+.writeus-item-email {
+  width: 252px;
+  height: 29px;
+  padding-top: 5px;
+  padding-left: 15px;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.writeus-item-text {
+  width: 413px;
+  height: 15px;
+  padding-top: 15px;
+  padding-bottom: 125px;
+  padding-left: 15px;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
 .writeus-button {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #fefefe;
 }
+
+
