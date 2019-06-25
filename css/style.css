@@ -1149,27 +1149,43 @@ a {
   width: 194px;
   height: 37px;
 
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: rgba(157, 177, 165, 0.8);
   border: none;
   border-radius: 25px;
+  /* background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #rgba(157, 177, 165, 0.8); */
 }
 
 .filters-sorting-select:hover {
   color: #000000;
 }
 
-.select-selected:after {
-  position: absolute;
-  content: "";
+.filters-sorting-select:hover ~ .custom-arrow {
+  border-top: 10px solid #000000;
+}
 
-  top: 14px;
-  right: 10px;
+
+.filters-sorting-select::-ms-expand {
+  display: none;
+}
+
+.custom-filters-sorting {
+  position: relative;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 13px;
+  left: 170px;
+
   width: 0;
   height: 0;
 
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #ffffff;
 }
 
 /* Кастомный радио-фильтр */
