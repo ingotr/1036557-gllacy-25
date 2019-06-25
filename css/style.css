@@ -1458,12 +1458,22 @@ a {
 
 /* Раздел модального окна */
 .modal {
-  display: block;
+  /* display: block; */
+  display: none;
+  position: fixed;
+  top: 337px;
+  left: 50%;
+
   width: 478px;
   height: 443px;
+  margin: 0;
+  margin-left: -239px;
+  padding: 0;
 
   background-color: #f8f7f4;
   border-radius: 5px;
+
+  z-index: 3;
 }
 
 .modal-title-wrapper {
@@ -1473,6 +1483,8 @@ a {
 }
 
 .modal-title {
+  margin-right: 65px;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -1518,10 +1530,31 @@ a {
 }
 
 .writeus-button {
+  width: 139px;
+  height: 14px;
+  margin-left: 0;
+  padding-top: 8px;
+  padding-bottom: 18px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #fefefe;
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height :100%;
+
+  background-color: rgba(0,0,0,0.3);
+  z-index: 3;
+  cursor: pointer;
+}
 

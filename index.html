@@ -251,7 +251,7 @@
           <p class="card-teltext">Для заказов по телефону:</p>
           <a class="card-tel" href="tel:8-812-450-25-25">8 812 450-25-25</a>
           <p class="card-schedule">(с 10 до 20 ежедневно)</p>
-          <a class="button modal-writeus" href="#">Форма обратной связи</a>
+          <a class="button modal-writeus" href="#" onclick="on()">Форма обратной связи</a>
         </div>
       </div>
     </section>
@@ -298,29 +298,32 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
-    <div class="container">
-      <div class="modal-title-wrapper">
-        <h2 class="modal-title">Мы обязательно вам ответим!</h2>
-        <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
-          <img src="img/close-cross.svg" width="18" height="17" alt="">
-        </button>
+  <div class="overlay" onclick="off()">
+
+    <div class="modal">
+      <div class="container">
+        <div class="modal-title-wrapper">
+          <h2 class="modal-title">Мы обязательно вам ответим!</h2>
+          <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи">
+            <img src="img/close-cross.svg" width="18" height="17" alt="">
+          </button>
+        </div>
+        <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="writeus-item">
+            <input id="writeus-name" class="writeus-item-name input-default" type="text" name="name" value=""
+              placeholder="Как вас зовут?">
+          </p>
+          <p class="writeus-item">
+            <input id="writeus-email" class="writeus-item-email input-default" type="email" name="email" value=""
+              placeholder="Ваша почта для ответа?">
+          </p>
+          <p class="writeus-item">
+            <input id="writeus-emailtext" class="writeus-item-text input-default" type="text" name="email-text" value=""
+              placeholder="Напишите что-нибудь...">
+          </p>
+          <a class="button writeus-button" href="#">Отправить</a>
+        </form>
       </div>
-      <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="writeus-item">
-          <input id="writeus-name" class="writeus-item-name input-default" type="text" name="name" value=""
-            placeholder="Как вас зовут?">
-        </p>
-        <p class="writeus-item">
-          <input id="writeus-email" class="writeus-item-email input-default" type="email" name="email" value=""
-            placeholder="Ваша почта для ответа?">
-        </p>
-        <p class="writeus-item">
-          <input id="writeus-emailtext" class="writeus-item-text input-default" type="text" name="email-text" value=""
-            placeholder="Напишите что-нибудь...">
-        </p>
-        <button class="button writeus-button" type="submit"><span class="button-text">Отправить</span></button>
-      </form>
     </div>
   </div>
   <script src="js/script.js"></script>
