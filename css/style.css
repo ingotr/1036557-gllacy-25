@@ -1515,6 +1515,12 @@ a {
   background-position: 50%;
 }
 
+.map iframe {
+  border: none;
+  width: 100%;
+  height: 416px;
+}
+
 .business-card {
   display: flex;
   flex-direction: column;
