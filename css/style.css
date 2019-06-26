@@ -779,6 +779,8 @@ a {
 }
 
 .hit-item {
+  position: relative;
+
   margin-right: 26px;
 }
 
@@ -832,6 +834,11 @@ a {
 .hit-icon {
   position: absolute;
   top: -268px;
+}
+
+.hit-item:hover .item-card,
+.hit-item:hover .quick-view-button {
+  display: block;
 }
 
 /* Общие стили для ссылок */
@@ -1721,7 +1728,7 @@ a {
   /* display: block; */
   display: none;
   position: fixed;
-  top: 337px;
+  top: 15%;
   left: 50%;
 
   width: 478px;
