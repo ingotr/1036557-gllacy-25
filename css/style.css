@@ -1135,7 +1135,6 @@ a {
 }
 
 .filters-sorting,
-.filters-pricing,
 .fat-title,
 .filler-title {
   font-size: 14px;
@@ -1194,6 +1193,87 @@ a {
   border-right: 6px solid transparent;
   border-top: 10px solid #ffffff;
 }
+
+/* Ценовой фильтр */
+.filter-price {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width: 220px;
+  /* margin-top: 49px; */
+}
+
+.filter-item legend {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 26px;
+  margin-bottom: 15px;
+  padding-top: 17px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  /* background-color: #f1f1f1; */
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 25px;
+}
+
+.range-controls .scale {
+  width: 176px;
+  height: 4px;
+
+  background-color: #f8f7f4;
+  opacity: 0.5;
+}
+
+.range-controls .bar {
+  width: 50%;
+  height: 4px;
+
+  margin-left: 20%;
+
+  background-color: green;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 43px;
+}
+
+.range-controls .toggle-max {
+  left: 130px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+/* Ценовой фильтр */
 
 /* Кастомный радио-фильтр */
 .filters-fat-list,
