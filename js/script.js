@@ -15,8 +15,8 @@ function on() {
 }
 
 function off() {
-  over.style.display = "none";
-  modal.style.display = "none";
+  // over.style.display = "none";
+  // modal.style.display = "none";
 }
 
 function modalClose() {
