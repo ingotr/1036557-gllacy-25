@@ -53,6 +53,10 @@ a {
   margin-bottom: 140px;
 }
 
+.catalog-page {
+  margin: 0;
+}
+
 .main-navigation {
   display: flex;
   /* flex-direction: row;
@@ -240,6 +244,8 @@ a {
 
   border-radius: 50%;
   background-color:rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
 }
 
 .search-icon,
@@ -280,6 +286,8 @@ a {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
+
+  z-index: 1;
 }
 
 .search-bar-input {
@@ -366,6 +374,8 @@ a {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 10px;
+
+  z-index: 1;
 }
 
 .sign-form-email {
@@ -545,6 +555,8 @@ a {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
+
+  z-index: 1;
 }
 
 .basket-list {
@@ -957,6 +969,7 @@ a {
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
+  word-break: break-word;
 
   text-align: center;
   text-decoration: underline;
@@ -1265,6 +1278,7 @@ a {
 
 .filters fieldset {
   margin: 0;
+  margin-bottom: 14px;
   padding: 0;
 
   border: none;
@@ -1272,7 +1286,7 @@ a {
 
 .filters-form {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 
   align-items: center;
@@ -1285,6 +1299,14 @@ a {
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
+}
+
+.sorting-title {
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .filters-sorting-select {
@@ -1344,13 +1366,23 @@ a {
 .filter-price {
   margin: 0;
   margin-right: 15px;
+  margin-bottom: 14px;
   padding: 0;
 
   border: none;
 }
 
+.price-title {
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
 .range-filter {
   width: 220px;
+  margin-right: 14px;
   /* margin-top: 49px; */
 }
 
@@ -1364,10 +1396,9 @@ a {
 .range-controls {
   position: relative;
 
-  height: 26px;
-  margin-bottom: 15px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-right: 22px;
+  padding-bottom: 18px;
   padding-left: 22px;
 
   /* background-color: #f1f1f1; */
@@ -1404,7 +1435,7 @@ a {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  /* box-shadow: 0 2px 1px 0 #cfcfcf; */
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1431,12 +1462,18 @@ a {
   list-style: none;
 }
 
+.filters-fat {
+  margin-bottom: 14px;
+}
+
 .filters-fat-list {
   display: flex;
+  flex-direction: row;
 
-  padding-top: 10px;
+  margin-right: 10px;
+  padding-top: 4px;
   padding-right: 15px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-left: 15px;
 
   background-color: rgba(157, 177, 165, 0.8);
@@ -1444,10 +1481,12 @@ a {
   border-radius: 25px;
 }
 
-.filters-fat-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: 10px;
+.fat-title {
+  margin-bottom: 5px;
+}
+
+.filters-fat-item {
+  margin-right: 20px;
 }
 
 .radio-container {
@@ -1455,7 +1494,8 @@ a {
   position: relative;
 
   margin-bottom: 12px;
-  padding-left: 35px;
+  padding-top: 8px;
+  padding-left: 30px;
 
   user-select: none;
   cursor: pointer;
@@ -1528,9 +1568,10 @@ a {
 .filler-list {
   display: flex;
 
-  padding-top: 10px;
+  margin-right: 13px;
+  /* padding-top: 4px; */
   padding-right: 15px;
-  padding-bottom: 10px;
+  /* padding-bottom: 4px; */
   padding-left: 15px;
 
   background-color: rgba(157, 177, 165, 0.8);
@@ -1538,8 +1579,17 @@ a {
   border-radius: 25px;
 }
 
+.filler-title {
+  margin-bottom: 5px;
+}
+
 .filler-list-item {
-  margin-right: 10px;
+  margin-right: 24px;
+  padding-top: 6px;
+}
+
+.filler-list-item:last-child {
+  margin-right: 0;
 }
 
 .checkbox-container {
@@ -1548,8 +1598,6 @@ a {
 
   padding-left: 35px;
   margin-bottom: 12px;
-
-  font-size: 22px;
 
   user-select: none;
   cursor: pointer;
@@ -1570,8 +1618,8 @@ a {
   top: 0;
   left: 0;
 
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 
   opacity: 0.8;
   border: 2px solid #ffffff;
@@ -1597,11 +1645,11 @@ a {
 }
 
 .checkbox-container .checkbox-mark:after {
-  left: 8px;
-  top: -4px;
+  left: 7px;
+  top: -2px;
 
-  width: 8px;
-  height: 16px;
+  width: 6px;
+  height: 12px;
 
   border: solid white;
   border-width: 0 4px 4px 0;
@@ -1613,6 +1661,7 @@ a {
 .filters-button {
   width: 144px;
   height: 36px;
+  margin-top: 5px;
 
   font-size: 16px;
   font-weight: 500;

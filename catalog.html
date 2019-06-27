@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header catalog-page">
     <h2 class="visually-hidden">Секция хедера</h2>
     <div class="container">
       <nav class="main-navigation">
@@ -117,18 +117,21 @@
       <h2 class="visually-hidden">Секция фильтров</h2>
       <div class="container container-spacebetween">
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="filters-sorting">Сортировка</label>
-          <div class="custom-filters-sorting">
-            <select id="filters-sorting" class="filters-sorting-select" name="sorting">
-              <option class="sorting-option">по популярности</option>
-              <option class="sorting-option">сначала недорогие</option>
-              <option class="sorting-option">сначала дорогие</option>
-              <option class="sorting-option">по жирности</option>
-            </select>
-            <span class="custom-arrow"></span>
-          </div>
+          <fieldset class="filter-sorting">
+            <legend class="sorting-title">Сортировка:</legend>
+            <!-- <label for="filters-sorting">Сортировка:</label> -->
+            <div class="custom-filters-sorting">
+              <select id="filters-sorting" class="filters-sorting-select" name="sorting">
+                <option class="sorting-option">по популярности</option>
+                <option class="sorting-option">сначала недорогие</option>
+                <option class="sorting-option">сначала дорогие</option>
+                <option class="sorting-option">по жирности</option>
+              </select>
+              <span class="custom-arrow"></span>
+            </div>
+          </fieldset>
           <fieldset class="filter-price">
-            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <legend class="price-title">Цена: 100 руб. – 500 руб.</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
