@@ -95,19 +95,15 @@ a {
   line-height: 18px;
 }
 
-.catalog:hover {
-  text-decoration: none;
-
-  background-color: #f7f6f3;
-  border-radius: 25px;
-}
-
 .catalog:hover > a {
   color: #000000;
 }
 
 .catalog:hover .catalog-list {
-  display: block;
+  /* display: block; */
+  height: 174px;
+
+  transition-delay: 0s;
 }
 
 .catalog:focus,
@@ -122,12 +118,13 @@ a {
 }
 
 .catalog-list {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 30px;
   left: 0;
 
   width: 153px;
+  height: 0;
   margin-top: 5px;
   /* height: 171px; */
 
@@ -136,6 +133,10 @@ a {
   border-radius: 5px;
 
   z-index: 1;
+
+  overflow: hidden;
+  transition: height 0s linear;
+  transition-delay: 0.5s;
 }
 
 .show {
@@ -274,28 +275,28 @@ a {
 }
 
 .search:hover .search-bar {
-  display: block;
+  height: 84px;
 
-  /* transition: 2s; */
-  /* transition-delay: 5s; */
-  transition-delay: 2s;
+  transition-delay: 0s;
 }
 
 .search-bar {
-  display: none;
   position: absolute;
   top: 37px;
   right: 0;
 
   width: 341px;
-  height: 84px;
+  height: 0;
 
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
 
   z-index: 1;
-  transition: 1s display;
+
+  overflow: hidden;
+  transition: height 0s linear;
+  transition-delay: 0.5s;
 }
 
 .search-bar-input {
@@ -367,24 +368,28 @@ a {
 }
 
 .sign-in:hover .sign-form {
-  display: flex;
+  height: 214px;
+
+  transition-delay: 0s;
 }
 
 .sign-form {
-  display: none;
-  flex-direction: column;
   position: absolute;
   top: 40px;
   left: -187px;
 
   width: 277px;
-  height: 214px;
+  height: 0;
 
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 10px;
 
   z-index: 1;
+
+  overflow: hidden;
+  transition: height 0s linear;
+  transition-delay: 0.5s;
 }
 
 .sign-form-email {
@@ -550,6 +555,8 @@ a {
 
 .basket:hover .basket-full-form{
   display: flex;
+
+  transition-delay: 2s;
 }
 
 .basket-full-form {
@@ -560,7 +567,7 @@ a {
   left: -424px;
 
   width: 539px;
-  height: 202px;
+  height: 222px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -569,6 +576,8 @@ a {
   border-radius: 5px;
 
   z-index: 1;
+
+  transition-delay: 2s;
 }
 
 .basket-list {

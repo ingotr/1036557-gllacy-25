@@ -2,7 +2,6 @@
 var modalWrite = document.querySelector(".modal-writeus");
 var modal = document.querySelector(".modal");
 var close = modal.querySelector(".modal-close");
-var show = document.querySelector(".catalog-list");
 var form = modal.querySelector("form");
 var modalName = modal.querySelector("[name=name]");
 var email = modal.querySelector("[name=email]");
@@ -54,11 +53,6 @@ form.addEventListener("submit", function (evt) {
     }
   }
 });
-
-// Задержка показа выпадающего меню раздела "каталог"
-function myFunction() {
-  show.classList.toggle("show");
-}
 
 // Функциии включения оверлея
 function on() {
