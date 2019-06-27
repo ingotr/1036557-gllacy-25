@@ -60,7 +60,7 @@ a {
 .main-navigation {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 
   /* width: 1146px; */
   /* height: 154px; */
@@ -86,7 +86,8 @@ a {
   display: flex;
   align-items: center;
 
-  margin-right: 351px;
+  /* margin-right: 351px; */
+  margin-right: 336px;
   margin-bottom: 10px;
 
   font-size: 16px;
@@ -126,7 +127,7 @@ a {
   top: 30px;
   left: 0;
 
-  width: 143px;
+  width: 153px;
   margin-top: 5px;
   /* height: 171px; */
 
@@ -211,6 +212,10 @@ a {
 }
 
 .navigation-item-current {
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+
   text-decoration: none;
 
   background-color: #d07058;
@@ -494,8 +499,8 @@ a {
 }
 
 .full-basket {
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 14px;
+  padding-left: 18px;
 
   background-color: #f7f6f3;
 }
@@ -1268,6 +1273,7 @@ a {
 
   width: 220px;
   margin: 0;
+  margin-top: -15px;
   padding: 0;
 
   list-style: none;
@@ -1306,9 +1312,25 @@ a {
   display: none;
 }
 
+/* Заголововк католога */
+.site-title {
+  margin-bottom: 25px;
+}
+
+.site-text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+
 /* Раздел фильтров */
 .filters {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .filters fieldset {
@@ -1338,6 +1360,7 @@ a {
 
 .sorting-title {
   margin-bottom: 5px;
+  margin-left: 14px;
 
   font-size: 14px;
   font-weight: 500;
@@ -1409,6 +1432,7 @@ a {
 
 .price-title {
   margin-bottom: 5px;
+  margin-left: 14px;
 
   font-size: 14px;
   font-weight: 500;
@@ -1416,7 +1440,7 @@ a {
 }
 
 .range-filter {
-  width: 220px;
+  width: 218px;
   margin-right: 14px;
   /* margin-top: 49px; */
 }
@@ -1431,9 +1455,9 @@ a {
 .range-controls {
   position: relative;
 
-  padding-top: 18px;
+  padding-top: 17px;
   padding-right: 22px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   padding-left: 22px;
 
   /* background-color: #f1f1f1; */
@@ -1451,10 +1475,10 @@ a {
 }
 
 .range-controls .bar {
-  width: 50%;
+  width: 57%;
   height: 4px;
 
-  margin-left: 20%;
+  margin-left: 14%;
 
   background-color: green;
 }
@@ -1476,11 +1500,11 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 43px;
+  left: 33px;
 }
 
 .range-controls .toggle-max {
-  left: 130px;
+  left: 131px;
 }
 
 .price-controls {
@@ -1505,9 +1529,6 @@ a {
   display: flex;
   flex-direction: row;
 
-  margin-right: 10px;
-  padding-top: 4px;
-  padding-right: 15px;
   /* padding-bottom: 10px; */
   padding-left: 15px;
 
@@ -1518,10 +1539,12 @@ a {
 
 .fat-title {
   margin-bottom: 5px;
+  margin-left: 14px;
 }
 
 .filters-fat-item {
   margin-right: 20px;
+  padding-top: 6px;
 }
 
 .radio-container {
@@ -1603,9 +1626,9 @@ a {
 .filler-list {
   display: flex;
 
+  width: 688px;
   margin-right: 13px;
   /* padding-top: 4px; */
-  padding-right: 15px;
   /* padding-bottom: 4px; */
   padding-left: 15px;
 
@@ -1616,10 +1639,11 @@ a {
 
 .filler-title {
   margin-bottom: 5px;
+  margin-left: 14px;
 }
 
 .filler-list-item {
-  margin-right: 24px;
+  margin-right: 18px;
   padding-top: 6px;
 }
 
@@ -1734,6 +1758,7 @@ a {
   flex-wrap: wrap;
 
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
 
   list-style: none;
@@ -1791,12 +1816,18 @@ a {
 }
 
 /* Раздел пагинации */
+.pagination {
+  margin-bottom: 14px;
+}
+
 .pagination-list {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
+  /* width: 1155px; */
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   padding: 0;
   padding-bottom: 33px;
 
@@ -1808,7 +1839,10 @@ a {
 .pagination-item {
   display: block;
 
-  padding: 9px 13px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1837,6 +1871,10 @@ a {
   background-color: #ffffff;
   color: #323232;
   border-radius: 50%;
+}
+
+.pagination-cover:last-child .pagination-item{
+  padding-right: 0;
 }
 
 .pagination-item-disabled {
