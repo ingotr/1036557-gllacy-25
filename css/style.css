@@ -169,8 +169,6 @@ a {
 }
 
 .catalog-list .catalog-list-item {
-  margin-right: 5px;
-  margin-left: 5px;
   padding-top: 8px;
   padding-right: 20px;
   padding-left: 20px;
@@ -997,8 +995,9 @@ a {
           flex-direction: column;
 
   width: 560px;
-  height: 229px;
+  padding-top: 1px;
   padding-left: 19px;
+  padding-bottom: 1px;
 
   border-radius: 10px;
 }
@@ -1009,6 +1008,7 @@ a {
   background-color: #d02452;
   background-image: url("../img/raspberry-bg.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -1016,20 +1016,22 @@ a {
   background-color: #6e4229;
   background-image: url("../img/chocolate-bg.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner-text {
   width: 514px;
-  height: 40px;
 
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  word-break: break-word;
 }
 
 .banner-button {
@@ -1038,6 +1040,7 @@ a {
 
   width: 150px;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -1093,9 +1096,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 5px;
 
@@ -1105,7 +1109,15 @@ a {
 .hit-item {
   position: relative;
 
+  width: 267px;
+  margin: 0;
   margin-right: 26px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.hit-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .price-tag {
@@ -1644,17 +1656,17 @@ a {
   width: 176px;
   height: 4px;
 
-  background-color: #f8f7f4;
-  opacity: 0.5;
+  background-color: rgba(248, 247, 244, 0.5);
 }
 
 .range-controls .bar {
-  width: 57%;
+  position: absolute;
+  width: 44%;
   height: 4px;
 
   margin-left: 14%;
 
-  background-color: green;
+  background-color: #f8f7f4;
 }
 
 .range-controls .toggle {
@@ -2462,7 +2474,7 @@ a {
   width: 478px;
   height: 443px;
   margin: 0;
-  margin-left: -239px;
+  transform: translateX(-50%);
   padding: 0;
 
   background-color: #f8f7f4;
